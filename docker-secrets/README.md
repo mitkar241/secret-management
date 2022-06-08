@@ -1,2 +1,6 @@
-# README
+# Docker Secrets Management
 ---
+`Docker secrets management` is one of the newer secrets management tools out there. Coincidentally, it was designed by some of the overlapping folks who worked on Keywhiz at Square. Here’s how Docker describes the problem and why traditional static secrets management tools or encryption key management products can’t deal with these issues:
+
+> "A critical element of building safer apps is having a secure way of communicating with other apps and systems, something that often requires credentials, tokens, passwords and other types of confidential information — usually referred to as application secrets. We are excited to introduce Docker Secrets, a container native solution that strengthens the Trusted Delivery component of container security by integrating secret distribution directly into the container platform.
+With containers, applications are now dynamic and portable across multiple environments. This made existing secrets distribution solutions inadequate because they were largely designed for static environments. Unfortunately, this led to an increase in mismanagement of application secrets, making it common to find insecure, home-grown solutions, such as embedding secrets into version control systems like GitHub, or other equally bad — bolted on point solutions as an afterthought."

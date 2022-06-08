@@ -1,2 +1,11 @@
-# README
+# Vault
 ---
+`Hashicorp` is an open source software company with many products, probably best known for its products like Vagrant and Terraform, and also has a secrets management product called `Hashicorp Vault`. The New Stack publishes a good overview of the pros and cons of Hashicorp Vault here, which discusses some of the benefits of managing secrets in an external tool vs. environmental variables, working nicely in the Hashicorp ecosystem, and the benefits of API integrations.
+
+There is also an interesting comparison between Hashicorp Vault and Keywhiz from The New Stack:
+
+> While all the above is great — as is typically the case with software — certain tradeoffs were made in Vault’s design, and there are some limitations. While there are many benefits to being able to run Vault as a service, this does lead to increased infrastructure costs, and the associated pains of managing that infrastructure. Additionally, not all of Vault’s benefits are available for all use cases. For example, dynamically generated secrets can only integrate with a limited number of other services. Also, Keywhiz by Square is another big player in this area that is worthy of attention. The biggest fundamental difference between Vault and Keywhiz, is that while Vault exposes secrets over an API, Keywhiz uses a FUSE filesystem. Vault wrote a nice and fairly objective writeup on the comparison. Lastly, if you are working with Chef or a related tool, it’s probably easier initially to use their integrated solution than it is to wire it up to Vault.
+
+Due to the complexity of standing up and maintaining a Hashicorp Vault infrastructure, there are quite a few guides and tutorials. Many companies end up hiring consultants or engaging in professional services contracts as part of their Hashicorp Vault rollouts. Here’s a handy guide and tutorial for best practices:
+
+> Have you ever installed Hashicorp Vault and wondered to yourself: “Am I actually protecting my organization?” You’re not alone. While it’s easy to install Vault, making sure that it is configured correctly for productivity and security can be a challenging task. I’ve built my fair share of guides and webinars and worked with Vault a-lot recently. This has led me to create my own list of Vault’s best practices.
